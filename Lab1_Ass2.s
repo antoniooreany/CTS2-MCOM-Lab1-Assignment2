@@ -3,7 +3,7 @@
 	.global _start
 	.text
 START:
-	movi r7, 0xA		# 0xA = 1010 -> r7
+	movi r7, 0x6		# 0x6 = 0110 -> r7
 	call write_LED		# subroutine write_LED is called, r7 passed into the subroutine
 	
 endloop:
