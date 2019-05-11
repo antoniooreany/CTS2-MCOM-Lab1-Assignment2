@@ -45,7 +45,7 @@ _start:
 					# begin at end of section
 
 START:
-	movi r7, 0x9		# 0x9 = 1001 -> r7
+	movi r7, 0x9		# 0x9 = 1001 -> r7 as a parameter
 	call write_LED		# subroutine write_LED is called, r7 passed into the subroutine
 	
 endloop:
