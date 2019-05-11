@@ -54,11 +54,11 @@ endloop:
 ###############################################
 write_LED:
 	subi sp, sp, 4 		# Push
-	stw r2, (sp)		#
-	movia r2, 0x810		# 
-	stw r7, (r2)
+	stw r2, (sp)		# ---
+	movia r2, 0x810		# r2 <- 0x810=output_register_address)
+	stw r7, (r2)		# r7 -> (r2) parameter -> output_register
 	ldw r2, (sp) 		# Pop
-	addi sp, sp, 4		#
+	addi sp, sp, 4		# ---
 ret
 ###############################################
 	
